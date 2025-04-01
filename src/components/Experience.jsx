@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import './experience.css';
 export function Experience() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
-
+  console.log(selectedTab);
   return (
     <div className='container'>
       <nav className='nav'>
@@ -42,7 +42,17 @@ export function Experience() {
             transition={{ duration: 0.2 }}
             style={icon}
           >
-            {selectedTab ? selectedTab.icon : '😋'}
+            {selectedTab ? (
+              <div className='info'>
+                <div>
+                  <h3>{selectedTab.company}</h3>
+                  <span>{selectedTab.period}</span>
+                  <p>{selectedTab.description}</p>
+                </div>
+              </div>
+            ) : (
+              '😋'
+            )}
           </motion.div>
         </AnimatePresence>
       </main>

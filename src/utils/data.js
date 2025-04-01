@@ -1,6 +1,6 @@
-import saylanilogo from '../assets/icons/saylanilogo.png';
-import aarteclogo from '../assets/icons/aarteclogo.jpg';
-import botnosticlogo from '../assets/icons/botnosticlogo.svg';
+// import saylanilogo from '../assets/icons/saylanilogo.png';
+// import aarteclogo from '../assets/icons/aarteclogo.jpg';
+// import botnosticlogo from '../assets/icons/botnosticlogo.svg';
 export const experiences = [
   {
     company: 'First company',
@@ -24,20 +24,29 @@ export const experiences = [
   },
 ];
 
-const exp = [
-  { icon: botnosticlogo, label: 'SMIT' },
-  { icon: aarteclogo, label: 'Aartec' },
-  { icon: botnosticlogo, label: 'Botnostic' },
+const expInfo = [
+  {
+    icon: '🏪',
+    label: 'Education',
+    company: 'Fourth  company',
+    period: '2021 - Present',
+    description: 'Description of your experience in this company.',
+  },
+  {
+    icon: '🏢',
+    label: 'Company',
+    company: 'Fourth  company',
+    period: '2021 - Present',
+    description: 'Description of your experience in this company.',
+  },
+  {
+    icon: '🎉',
+    label: 'Achievements',
+    company: 'Fourth  company',
+    period: '2021 - Present',
+    description: 'Description of your experience in this company.',
+  },
 ];
-/**
- * ==============   Data   ================
- */
 
-const allIngredients = [
-  { icon: '🏪', label: 'Education' },
-  { icon: '🏢', label: 'Company' },
-  { icon: '🎉', label: 'Achievements' },
-];
-
-const [tomato, lettuce, cheese] = allIngredients;
-export const tabs = [tomato, lettuce, cheese];
+const [education, company, achievements] = expInfo;
+export const tabs = [education, company, achievements];
