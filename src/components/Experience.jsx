@@ -1,54 +1,55 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Reveal } from './Reveal';
-const experiences = [
-  {
-    company: 'First company',
-    period: '2021 - Present',
-    description: 'Description of your experience in this company.',
-  },
-  {
-    company: 'Second company',
-    period: '2021 - Present',
-    description: 'Description of your experience in this company.',
-  },
-  {
-    company: 'Third company',
-    period: '2021 - Present',
-    description: 'Description of your experience in this company.',
-  },
-  {
-    company: 'Fourth  company',
-    period: '2021 - Present',
-    description: 'Description of your experience in this company.',
-  },
-];
-export const Experience = () => {
+import { useState } from 'react';
+import { tabs } from '../utils/data';
+import { AnimatePresence } from 'framer-motion';
+import './experience.css';
+export function Experience() {
+  const [selectedTab, setSelectedTab] = useState(tabs[0]);
+
   return (
-    <div className='p-8 max-w-[600px] mx-auto'>
-      <h1 className=' text-4xl text-gray-200 font-bold text-center mb-12'>
-        Experience
-      </h1>
-      <motion.div className='space-y-8' initial='hidden' animate='visible'>
-        {experiences.map((experience, index) => (
-          <Reveal>
-            <motion.div
-              key={index}
-              className='  flex flex-col items-start mx-auto border border-purple-600 p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 bg-purple-700/10'
-              initial='hidden'
-              whileInView='visible'
-              viewport={{ once: false, amount: 0.3 }}
-              transition={{ duration: 1 }}
+    <div className='container'>
+      <nav className='nav'>
+        <ul className={'tabsContainer'}>
+          {tabs.map((item) => (
+            <motion.li
+              key={item.label}
+              initial={false}
+              animate={{
+                backgroundColor: item === selectedTab ? '#eee' : '#eee0',
+              }}
+              className='tab'
+              onClick={() => setSelectedTab(item)}
             >
-              <h2 className='text-gray-100 font-semibold text-2xl'>
-                {experience.company}
-              </h2>
-              <p className='text-gray-300'>{experience.period}</p>
-              <p className='text-gray-400 mt-4 '>{experience.description}</p>
-            </motion.div>
-          </Reveal>
-        ))}
-      </motion.div>
+              <div className='tab-section'>{`${item.icon}  ${item.label}`}</div>
+              {item === selectedTab ? (
+                <motion.div
+                  className='underline'
+                  layoutId='underline'
+                  id='underline'
+                />
+              ) : null}
+            </motion.li>
+          ))}
+        </ul>
+      </nav>
+      <main className={'iconContainer'}>
+        <AnimatePresence mode='wait'>
+          <motion.div
+            key={selectedTab ? selectedTab.label : 'empty'}
+            initial={{ y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -10, opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            style={icon}
+          >
+            {selectedTab ? selectedTab.icon : '😋'}
+          </motion.div>
+        </AnimatePresence>
+      </main>
     </div>
   );
+}
+
+const icon = {
+  fontSize: '128px',
 };

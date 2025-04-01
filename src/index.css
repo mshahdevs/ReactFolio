@@ -3,27 +3,27 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    width: 100%;
-    font-family: "Space Grotesk",sans-serif;
-    background-color: #190b1f;
-    /* background-color: white; */
+body {
+  width: 100%;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #190b1f;
+  /* background-color: white; */
 }
 
-h2{
-    @apply text-xl md:text-4xl
+h2 {
+  @apply text-xl md:text-4xl;
 }
 
-p{
-    @apply text-xl tracking-tight leading-relaxed
+p {
+  @apply text-xl tracking-tight leading-relaxed;
 }
-span{
-    @apply text-purple-600
+span {
+  @apply text-purple-600;
 }
-.shiny{
-    background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
-    /* background: radial-gradient(circle,rgba(178,19,202,0.2), transparent 70%); */
+.shiny {
+  background: radial-gradient(circle, rgba(178, 19, 202, 0.2), transparent 70%);
+  /* background: radial-gradient(circle,rgba(178,19,202,0.2), transparent 70%); */
 }
-.bg-primary-color{
-    @apply bg-purple-600
+.bg-primary-color {
+  @apply bg-purple-600;
 }
