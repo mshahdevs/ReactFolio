@@ -5,7 +5,7 @@ import { AnimatePresence } from 'framer-motion';
 import '../styles/experience.css';
 export function Experience() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
-  console.log(selectedTab);
+
   return (
     <div className='container'>
       <nav className='nav'>
