@@ -15,7 +15,7 @@ export const Portfolio = () => {
       description: 'UI for frontend development using React.',
       links: {
         site: '#',
-        github: '#',
+        github: 'https://github.com/mshahdevs/shopping-cart-redux-toolkit',
       },
       icons: {
         html: <AiOutlineHtml5 />,
@@ -26,8 +26,8 @@ export const Portfolio = () => {
       title: 'Project #2',
       description: 'Logic for frontend development using React.',
       links: {
-        site: '#',
-        github: '#',
+        site: 'https://mshahdevs.github.io/responsive-book-web/',
+        github: 'https://github.com/mshahdevs/responsive-book-web',
       },
       icons: {
         html: <DiHtml5 />,
@@ -40,8 +40,8 @@ export const Portfolio = () => {
       title: 'Project #3',
       description: 'UI for frontend development using React.',
       links: {
-        site: '#',
-        github: '#',
+        site: 'https://cafe-shah.netlify.app/',
+        github: 'https://github.com/mshahdevs/coffee-shop-store',
       },
       icons: {
         html: <AiOutlineHtml5 />,
@@ -89,6 +89,9 @@ export const Portfolio = () => {
           </div>
         </Reveal>
       ))}
+      <a href='https://github.com/mshahdevs'>
+        <button className='download_btn'>Many more +</button>
+      </a>
     </div>
   );
 };

@@ -68,9 +68,19 @@ export const Hero = () => {
             transition={{ duration: 1, delay: 1.5 }}
             className='flex items-center justify-center gap-6 my-4 md:mb-0'
           >
-            <button className='download_btn'>Download CV</button>
+            <motion.a
+              href='https://drive.google.com/file/d/1QYYXsRBWqO-QWO21cO42-_qv-nHw3pI4/view?usp=drive_link'
+              target='_blank'
+            >
+              <button className='download_btn'>Download CV</button>
+            </motion.a>
             <div className='flex gap-6 flex-row text-4xl  z-20'>
-              <motion.a whileHover={{ scale: 1 }} className='icons' href='#'>
+              <motion.a
+                whileHover={{ scale: 1 }}
+                className='icons'
+                target='_blank'
+                href='https://github.com/mshahdevs'
+              >
                 <motion.span
                   className='icon'
                   initial={{ color: '#fff' }}
@@ -87,7 +97,12 @@ export const Hero = () => {
                   <AiOutlineGithub />
                 </motion.span>
               </motion.a>
-              <motion.a whileHover={{ scale: 1 }} className='icons' href='#'>
+              <motion.a
+                whileHover={{ scale: 1 }}
+                className='icons'
+                target='_blank'
+                href='https://linkedin.com/in/mshahdevs'
+              >
                 <motion.span
                   className='icon'
                   initial={{ color: '#fff' }}
@@ -101,10 +116,15 @@ export const Hero = () => {
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn to={''} />
                 </motion.span>
               </motion.a>
-              <motion.a whileHover={{ scale: 1 }} className='icons' href='#'>
+              <motion.a
+                whileHover={{ scale: 1 }}
+                className='icons'
+                target='_blank'
+                href='https://wa.me/923119080523'
+              >
                 <motion.span
                   className='icon'
                   initial={{ color: '#fff' }}
