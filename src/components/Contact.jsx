@@ -23,8 +23,7 @@ export function Contact() {
             <div className='flex  mt-10 items-center gap-7'>
               <div className='bg-gray-600/50 p-4 rounded-xl'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
-                  11
-                  <span>+</span>
+                  9<span>+</span>
                 </h3>
                 <p className='text-xs md:text-base'>
                   <span>Projects</span>
@@ -32,7 +31,7 @@ export function Contact() {
               </div>
               <div className='bg-gray-600/50 p-5 rounded-xl'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
-                  2<span>+</span>
+                  1<span>+</span>
                 </h3>
                 <p className='text-xs md:text-base'>
                   <span>years of experience</span>
@@ -40,7 +39,7 @@ export function Contact() {
               </div>
               <div className='bg-gray-600/50 p-5 rounded-xl'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
-                  5<span>+</span>
+                  2<span>+</span>
                 </h3>
                 <p className='text-xs md:text-base'>
                   <span>happy clients</span>

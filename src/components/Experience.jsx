@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { tabs } from '../utils/data';
 import { AnimatePresence } from 'framer-motion';
-import './experience.css';
+import '../styles/experience.css';
 export function Experience() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
   console.log(selectedTab);
