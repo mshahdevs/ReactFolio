@@ -123,7 +123,7 @@ export const Hero = () => {
                 whileHover={{ scale: 1 }}
                 className='icons'
                 target='_blank'
-                href='https://wa.me/923119080523'
+                href='https://wa.me/923349273369'
               >
                 <motion.span
                   className='icon'
