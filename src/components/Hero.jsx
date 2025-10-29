@@ -1,10 +1,10 @@
-import React from 'react';
-import profilepic from '../assets/profile.png';
-import '../styles/hero.css';
-import { TypeAnimation } from 'react-type-animation';
-import { ShinyEffect } from './ShinyEffect';
-import { AiOutlineGithub } from 'react-icons/ai';
-import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa6';
+import React from "react";
+import profilepic from "../assets/profile.png";
+import "../styles/hero.css";
+import { TypeAnimation } from "react-type-animation";
+import { ShinyEffect } from "./ShinyEffect";
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import {
   DiCss3,
   DiHtml5,
@@ -13,9 +13,9 @@ import {
   DiNodejs,
   DiNodejsSmall,
   DiReact,
-} from 'react-icons/di';
-import { RiNextjsLine } from 'react-icons/ri';
-import { motion } from 'framer-motion';
+} from "react-icons/di";
+import { RiNextjsLine } from "react-icons/ri";
+import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <div className='w-full mt-24  max-w-[1200px] mx-auto'>
@@ -28,14 +28,14 @@ export const Hero = () => {
         >
           <TypeAnimation
             sequence={[
-              'Front-End Developer',
+              "Front-End Developer",
               1000,
-              'Web Developer',
+              "Web Developer",
               1000,
-              'React Developer',
+              "React Developer",
               1000,
             ]}
-            speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
+            speed={{ type: "keyStrokeDelayInMs", value: 100 }}
             repeat={Infinity}
             omitDeletionAnimation={true}
             className='font-bold text-gray-400 text-xl md:text-5xl italic mb-4'
@@ -83,15 +83,15 @@ export const Hero = () => {
               >
                 <motion.span
                   className='icon'
-                  initial={{ color: '#fff' }}
+                  initial={{ color: "#fff" }}
                   whileHover={{
                     scale: 1,
-                    color: '#fff',
+                    color: "#fff",
                     backgroundImage:
-                      'linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)',
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
+                      "linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   <AiOutlineGithub />
@@ -105,18 +105,18 @@ export const Hero = () => {
               >
                 <motion.span
                   className='icon'
-                  initial={{ color: '#fff' }}
+                  initial={{ color: "#fff" }}
                   whileHover={{
                     scale: 1,
-                    color: '#0077B5',
+                    color: "#0077B5",
                     backgroundImage:
-                      'linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)',
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
+                      "linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
-                  <FaLinkedinIn to={''} />
+                  <FaLinkedinIn to={""} />
                 </motion.span>
               </motion.a>
               <motion.a
@@ -127,15 +127,15 @@ export const Hero = () => {
               >
                 <motion.span
                   className='icon'
-                  initial={{ color: '#fff' }}
+                  initial={{ color: "#fff" }}
                   whileHover={{
                     scale: 1,
-                    color: '#25D366',
+                    color: "#25D366",
                     backgroundImage:
-                      'linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)',
-                    WebkitBackgroundClip: 'text',
-                    backgroundClip: 'text',
-                    WebkitTextFillColor: 'transparent',
+                      "linear-gradient(220.55deg, #a531dc 0%, #4300b1 100%)",
+                    WebkitBackgroundClip: "text",
+                    backgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
                   }}
                 >
                   <FaWhatsapp />
@@ -171,9 +171,9 @@ export const Hero = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1, delay: 2 }}
-        className='flex justify-center items-center py-24 px-12 w-full md:px-0 text-7xl'
+        className='flex flex-col md:flex-row justify-center items-center py-12 md:py-24 px-4 md:px-12 w-full text-4xl md:text-7xl gap-2'
       >
-        <p className='text-white'>My Tech Stack</p>
+        <p className='text-white text-center md:text-left'>My Tech Stack</p>
 
         <DiJavascript1 className='text-yellow-500 mx-2' />
         <DiReact className='text-blue-500 mx-2' />
@@ -181,7 +181,7 @@ export const Hero = () => {
         <RiNextjsLine className='text-white mx-2' />
       </motion.div>
       <div className='w-full absoute inset-0 hidden md:block'>
-        <ShinyEffect left={'0'} right={0} size={1000} top={0} />
+        <ShinyEffect left={"0"} right={0} size={1000} top={0} />
       </div>
     </div>
   );
