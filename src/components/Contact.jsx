@@ -1,5 +1,5 @@
-import React from 'react';
-import { Reveal } from './Reveal';
+import React from "react";
+import { Reveal } from "./Reveal";
 
 export function Contact() {
   return (
@@ -9,7 +9,7 @@ export function Contact() {
           <div>
             <div className='text-gray-300 my-3'>
               <h3 className='text-4xl text-left font-semibold mb-5'>
-                About <span>Me</span>{' '}
+                About <span>Me</span>{" "}
               </h3>
               <p className='text-justify leading-7 w-11/12 mx-auto'>
                 I am a web developer who loves what I do. I know how to use
@@ -20,8 +20,8 @@ export function Contact() {
                 development.
               </p>
             </div>
-            <div className='flex  mt-10 items-center gap-7'>
-              <div className='bg-gray-600/50 p-4 rounded-xl'>
+            <div className='flex flex-wrap mt-10 items-center gap-4 md:gap-7 justify-center md:justify-start'>
+              <div className='bg-gray-600/50 p-4 rounded-xl flex-1 min-w-[100px] text-center'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
                   9<span>+</span>
                 </h3>
@@ -29,7 +29,7 @@ export function Contact() {
                   <span>Projects</span>
                 </p>
               </div>
-              <div className='bg-gray-600/50 p-5 rounded-xl'>
+              <div className='bg-gray-600/50 p-4 rounded-xl flex-1 min-w-[100px] text-center'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
                   1<span>+</span>
                 </h3>
@@ -37,7 +37,7 @@ export function Contact() {
                   <span>years of experience</span>
                 </p>
               </div>
-              <div className='bg-gray-600/50 p-5 rounded-xl'>
+              <div className='bg-gray-600/50 p-4 rounded-xl flex-1 min-w-[100px] text-center'>
                 <h3 className='md:text-4xl text-2xl font-semibold text-white'>
                   2<span>+</span>
                 </h3>
@@ -54,7 +54,7 @@ export function Contact() {
             id='form'
           >
             <p className='text-gray-100 font-bold text-xl mb-2'>
-              Let's connect!👋{' '}
+              Let's connect!👋{" "}
             </p>
             <input
               type='text'
